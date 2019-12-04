@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    'wiki'
+    'wiki',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -106,6 +106,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+DEFAULT_LOGOUT_URL = '/'
 
 
 # Internationalization
